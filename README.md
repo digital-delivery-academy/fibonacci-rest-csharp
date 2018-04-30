@@ -6,8 +6,8 @@ There are a number of endpoints in this application.  The following question nee
 
 There are no automated checks for this application.  Treating the application as a black box, produce appropriate automated checks against the applications interfaces.  Consider that there is more than one interface into the application.
 
-- Use only RestAssured or RestEasy to test the REST interface.
-- Use only JUnit as a test harness.
+- Use only RestSharp to test the REST interface.
+- Use only NUnit as a test harness.
 - Ensure that your tests can be executed with an appropriate goal from Maven.
 
 # To submit your test
