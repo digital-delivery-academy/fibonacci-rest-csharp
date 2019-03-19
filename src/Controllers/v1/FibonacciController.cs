@@ -19,13 +19,13 @@ namespace fibonacci_csharp.Controllers.v1
         }
 
         [HttpGet("{index:int}")]
-        public IActionResult GetFibonnaciNumberAtGivenIndexInSequence(int index)
+        public IActionResult GetFibonacciNumberAtGivenIndexInSequence(int index)
         {
             return Ok(Maths.Fibonnaci(index));
         }
 
         [HttpGet("/api/v1/Fibonacci/Range")]
-        public IActionResult GetFibonnaciSequenceBetweenTwoIndexes([FromQuery] int startIndex, [FromQuery] int endIndex)
+        public IActionResult GetFibonacciSequenceBetweenTwoIndexes([FromQuery] int startIndex, [FromQuery] int endIndex)
         {
             var fibSeq = new List<String>();
             for(var i = startIndex; i < endIndex; i++) 
